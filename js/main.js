@@ -350,8 +350,8 @@ fetch(instruccionesProducto)
       img.classList.add("instrucciones");
       img.innerHTML = 
       `
-      <div class="instrucciones2 col-xl-12 col-md-12 col-sm-12">
-        <img class="img-fluid rounded-4" src="${producto.url}" alt="${producto.nombre}">
+      <div class="instrucciones2 card rounded-5 col-xl-12 col-md-12 col-sm-12">
+        <img class="img-fluid" src="${producto.url}" alt="${producto.nombre}">
       </div>
       `
       instrucciones.appendChild(img);
@@ -359,21 +359,3 @@ fetch(instruccionesProducto)
   })
   .catch(error => console.log(error))
   .finally(() => console.log("El código ha sido ejecutado"));
-
-
-  /* const verProductos = () => {
-  productos.forEach(Producto => {
-    const card = document.createElement("div");
-    card.classList.add("col-xl-3", "col-md-6", "col-sm-12");
-    card.innerHTML =
-      `
-    <div class ="card rounded-4">
-      <img src = "${Producto.img}" class = "card-img-top imgProductos" alt="${Producto.nombre}">
-      <div class="contenedorDescripcion">
-        <h2 class="text-center"> ${Producto.nombre} </h2>
-        <p class="text-center"> $${Producto.precio} </p>
-        <button class="btn botonCards" id="boton${Producto.id}"> Agregar al Carrito </button>
-      </div>
-    </div>
-    `
-    ProductosChurulandia.appendChild(card); */
