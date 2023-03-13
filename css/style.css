@@ -85,3 +85,17 @@ span {
 .toastify {
   border-radius: 10px;
 }
+
+.cont-fetch {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-content: center;
+}
+
+.instrucciones, .instrucciones2 {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin: 1rem;
+}
