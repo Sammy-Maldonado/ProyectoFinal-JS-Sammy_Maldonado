@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carrito de compras - Churulandia</title>
+  <!-- CSS Boostrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <!-- Toastify CSS -->
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+  <!-- Mi CSS -->
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body class="container">
+  <h1>Churulandia - Carrito de Compras</h1>
+  <h2 class="mt-5 h2_carrito">Seleccione su producto:</h2>
+  <div id="ProductosChurulandia" class="row my-4"></div>
+
+  <!-- CARRITO DE COMPRAS -->
+  <h2 class="borde-superior py-3 h2_carrito">Carrito de compras</h2>
+  <h3>El total de su compra es de: <span id="total"></span></h3>
+  <div class="botonContainer py-4">
+    <button class="btn botonCards me-2" id="mostrarCarrito">Ver Carrito</button>
+    <button class="btn botonCards ms-2" id="vaciarCarrito">Vaciar Carrito</button>
+  </div>
+
+  <div id="carritoCointainer" class="row py-4"></div>
+
+  <footer>
+    <p class="copyright pt-2">Página creada por Sammy Maldonado - Todos los derechos reservados</p>
+  </footer>
+
+  <!-- Sweet Alert -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <!-- Boostrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+  <!-- TOASTIFY -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+  <!-- Mi JS -->
+  <script src="js/main.js"></script>
+</body>
+
+</html>
