@@ -340,7 +340,7 @@ boton11.addEventListener("click", () => {
 
 /* FETCH */
 const instrucciones = document.getElementById("instrucciones");
-const instruccionesProducto = "json/productos.json";
+const instruccionesProducto = "json/etiquetas.json";
 
 fetch(instruccionesProducto)
   .then(response => response.json())
