@@ -1,13 +1,13 @@
 [
-  {"id": 1, "nombre":"Churu Salmón", "precio": 2390, "img": "img/churu-salmon.png", "cantidad": 20},
-  {"id": 2, "nombre":"Churu Pollo", "precio": 2390, "img": "img/churu-pollo.png", "cantidad": 20},
-  {"id": 3, "nombre":"Churu Atún", "precio": 2390, "img": "img/churu-atun.jpg", "cantidad": 20},
-  {"id": 4, "nombre":"Churu Atún y Escalopa", "precio": 2390, "img": "img/churu-atun-y-escalopa.png", "cantidad": 20},
-  {"id": 5, "nombre":"Churu Pollo Camarón", "precio": 2390, "img": "img/churu-pollo-camaron.png", "cantidad": 20},
-  {"id": 6, "nombre":"Churu Bites Pollo Atún", "precio": 2390, "img": "img/churu-bites-pollo-atun.jpg", "cantidad": 20},
-  {"id": 7, "nombre":"Churu Pops Pollo", "precio": 2790, "img": "img/churu-pops-pollo.jpg", "cantidad": 20},
-  {"id": 8, "nombre":"Churu Pops Atún", "precio": 2790, "img": "img/churu-pops-atun.png", "cantidad": 20},
-  {"id": 9, "nombre":"Churu 20 Unidades", "precio": 11900, "img": "img/churu-20-unidades.jpg", "cantidad": 20},
-  {"id": 10, "nombre":"Churu - 50 Un.", "precio": 24990, "img": "img/churu-50-unidades.jpg", "cantidad": 20},
-  {"id": 11, "nombre":"Churu Diet - 50 Un.", "precio": 34900, "img": "img/churu-diet-pollo-atun-50-unidades.png", "cantidad": 20}
+  {"id": 1, "nombre":"Churu Salmón", "precio": 2390, "img": "img/churu-salmon.png", "cantidad": 1},
+  {"id": 2, "nombre":"Churu Pollo", "precio": 2390, "img": "img/churu-pollo.png", "cantidad": 1},
+  {"id": 3, "nombre":"Churu Atún", "precio": 2390, "img": "img/churu-atun.jpg", "cantidad": 1},
+  {"id": 4, "nombre":"Churu Atún y Escalopa", "precio": 2390, "img": "img/churu-atun-y-escalopa.png", "cantidad": 1},
+  {"id": 5, "nombre":"Churu Pollo Camarón", "precio": 2390, "img": "img/churu-pollo-camaron.png", "cantidad": 1},
+  {"id": 6, "nombre":"Churu Bites Pollo Atún", "precio": 2390, "img": "img/churu-bites-pollo-atun.jpg", "cantidad": 1},
+  {"id": 7, "nombre":"Churu Pops Pollo", "precio": 2790, "img": "img/churu-pops-pollo.jpg", "cantidad": 1},
+  {"id": 8, "nombre":"Churu Pops Atún", "precio": 2790, "img": "img/churu-pops-atun.png", "cantidad": 1},
+  {"id": 9, "nombre":"Churu 20 Unidades", "precio": 11900, "img": "img/churu-20-unidades.jpg", "cantidad": 1},
+  {"id": 10, "nombre":"Churu - 50 Un.", "precio": 24990, "img": "img/churu-50-unidades.jpg", "cantidad": 1},
+  {"id": 11, "nombre":"Churu Diet - 50 Un.", "precio": 34900, "img": "img/churu-diet-pollo-atun-50-unidades.png", "cantidad": 1}
 ]
