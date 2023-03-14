@@ -44,7 +44,7 @@ function importarProductos(productos) {
     `
     ProductosChurulandia.appendChild(card);
 
-//4) Utilizando Toastify para notificar cuando se agrega un producto al carrito
+    //4) Utilizando Toastify para notificar cuando se agrega un producto al carrito
     const boton = document.getElementById(`boton${producto.id}`);
     boton.addEventListener("click", () => {
       agregarAlCarrito(producto.id);
@@ -189,14 +189,6 @@ vaciarCarrito.addEventListener("click", () => {
   })
 })
 
-const vaciarTodoElCarrito = () => {
-  carrito = [];
-  verCarrito();
-
-  //Limpiando el localStorage:
-  localStorage.clear();
-}
-
 //11) Agregando botón para finalizar la compra + Alerta de Sweet Alert
 
 const finalizarCompra = document.getElementById("finalizarCompra");
@@ -219,6 +211,14 @@ finalizarCompra.addEventListener("click", () => {
     }
   })
 })
+
+const vaciarTodoElCarrito = () => {
+  carrito = [];
+  verCarrito();
+
+  //Limpiando el localStorage:
+  localStorage.clear();
+}
 
 
 //12) Agregando algúnas características de los productos utilizando fetch
