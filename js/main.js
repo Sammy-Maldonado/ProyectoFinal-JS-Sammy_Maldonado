@@ -37,7 +37,7 @@ function importarProductos(productos) {
     `
     ProductosChurulandia.appendChild(card);
 
-    //4) Utilizando Toastify para notificar cuando se agrega un producto al carrito
+//4) Utilizando Toastify para notificar cuando se agrega un producto al carrito
     const boton = document.getElementById(`boton${producto.id}`);
     boton.addEventListener("click", () => {
       agregarAlCarrito(producto.id);
@@ -58,11 +58,21 @@ function importarProductos(productos) {
 //5) Agregando productos al carrito
 const agregarAlCarrito = (id) => {
   const producto = productos.find((producto) => producto.id === id);
-  const productoEnCarrito = carrito.find((producto) => producto.id === id);
+  const productoEnCarrito = carrito.some((producto) => producto.id === id);
+
+  const prodAlCarrito = {
+    id: producto.id,
+    nombre: producto.nombre,
+    precio: producto.precio,
+    img: producto.img,
+    cantidad: producto.cantidad,
+  }
+
   if (productoEnCarrito) {
-    productoEnCarrito.cantidad++;
+    const index = carrito.findIndex(p => p.id === id)
+    carrito[index].cantidad++;
   } else {
-    carrito.push(producto);
+    carrito.push(prodAlCarrito);
   }
   localStorage.setItem("carrito", JSON.stringify(carrito));
   calcularTotal();
@@ -100,7 +110,7 @@ const verCarrito = () => {
     carritoCointainer.appendChild(card);
 
 
-    //7) Habilitando botones para aumentar, disminuir y eliminar productos desde el carrito
+//7) Habilitando botones para aumentar, disminuir y eliminar productos desde el carrito
     const aumentar = document.getElementById(`aumentar${producto.id}`)
     aumentar.addEventListener("click", () => {
       aumentarProducto(producto.id);
@@ -209,10 +219,8 @@ finalizarCompra.addEventListener("click", () => {
 
 const vaciarTodoElCarrito = () => {
   carrito = [];
-  verCarrito();
-
-  //Limpiando el localStorage:
   localStorage.clear();
+  verCarrito();
 }
 
 //12) Agregando algúnas características de los productos utilizando fetch
