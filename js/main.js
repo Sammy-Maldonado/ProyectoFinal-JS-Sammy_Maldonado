@@ -3,9 +3,7 @@
 //1) Creando arrays de productos, carrito y subiendo los productos desde "json/productos.json" con fetch
 
 let productos = [];
-let carrito = [];
-
-carrito = JSON.parse(localStorage.getItem("carrito")) || [];
+let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
 const stockProductos = "json/productos.json";
 
 fetch(stockProductos)
@@ -15,11 +13,6 @@ fetch(stockProductos)
     importarProductos(data);
   })
   .catch(error => console.log(error));
-
-/* Cargando Carrito desde el LocalStorage en caso de que haya información en él */
-if (localStorage.getItem("carrito")) {
-  carrito = JSON.parse(localStorage.getItem("carrito"));
-}
 
 //2) Modificando el DOM para mostrar los productos
 
@@ -140,6 +133,7 @@ const disminuirProducto = (id) => {
   producto.cantidad--;
   if (producto.cantidad === 0) {
     eliminarProducto(id);
+    producto.cantidad = 1;
   } else {
     localStorage.setItem("carrito", JSON.stringify(carrito));
   }
@@ -150,6 +144,7 @@ const eliminarProducto = (id) => {
   const producto = carrito.find(producto => producto.id === id);
   const indice = carrito.indexOf(producto);
   carrito.splice(indice, 1);
+  producto.cantidad = 1;
   verCarrito();
   localStorage.setItem("carrito", JSON.stringify(carrito));
 }
