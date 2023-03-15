@@ -215,7 +215,6 @@ const vaciarTodoElCarrito = () => {
   localStorage.clear();
 }
 
-
 //12) Agregando algúnas características de los productos utilizando fetch
 
 const instrucciones = document.getElementById("instrucciones");
